@@ -1,0 +1,55 @@
+:root {
+	//colors
+	--clr-primary-300: hsl(226, 100%, 87%);
+	--clr-primary-400: hsl(14, 92%, 95%);
+	--clr-primary-400-dark: hsl(15, 100%, 70%);
+	--clr-primary-700: hsl(174, 77%, 80%);
+	--clr-primary-700-dark: hsl(174, 86%, 45%);
+
+	--clr-neutral-300: hsl(230, 100%, 99%);
+	--clr-neutral-400: hsl(224, 65%, 95%);
+	--clr-neutral-400-dark: hsl(223, 50%, 87%);
+	--clr-neutral-600: hsl(225, 20%, 60%);
+	--clr-neutral-700: hsl(227, 35%, 25%);
+
+	--clr-white: hsl(0, 0%, 100%);
+
+	--shadow: 0 2rem 3rem hsl(230, 29%, 61%);
+
+	// font families
+	--ff: 'Manrope', sans-serif;
+
+	// font weights
+	--fw-400: 600;
+	--fw-700: 800;
+
+	// font sizes
+	--fz-small: 1.2rem;
+	--fz-small-md: 1.4rem;
+	--fz-medium: 2rem;
+	--fz-large: 3.2rem;
+
+	// border radius
+	--borr-sm: 0.8rem;
+
+	// stage
+	--bg-body: var(--clr-neutral-300);
+	--clr-text: var(--clr-neutral-600);
+	--clr-heading: var(--clr-neutral-700);
+	--clr-span: var(--clr-neutral-700);
+
+	--slider-bar: var(--clr-neutral-400);
+	--slider-bar-filled: var(--clr-primary-700);
+	--slider-circle: var(--clr-primary-700-dark);
+
+	--bg-discount: var(--clr-primary-400);
+	--clr-discount: var(--clr-primary-400-dark);
+
+	--bg-toggle: var(--clr-neutral-400-dark);
+	--toggle: var(--clr-white);
+
+	--divider: var(--clr-neutral-400);
+
+	--bg-button: var(--clr-neutral-700);
+	--clr-button: var(--clr-primary-300);
+}
