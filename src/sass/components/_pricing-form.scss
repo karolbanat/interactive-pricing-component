@@ -41,6 +41,21 @@
 			border: none;
 			border-radius: 100vmax;
 		}
+
+		&::-moz-range-thumb {
+			appearance: none;
+			width: 4rem;
+			height: 4rem;
+
+			// slider thumb
+			background-color: var(--slider-circle);
+			background-image: url('../images/icon-slider.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+
+			border: none;
+			border-radius: 100vmax;
+		}
 	}
 
 	&__output {
