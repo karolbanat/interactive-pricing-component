@@ -14,7 +14,7 @@
 
 	--clr-white: hsl(0, 0%, 100%);
 
-	--shadow: 0 2rem 3rem hsl(230, 29%, 61%);
+	--shadow: 0 2rem 3rem hsl(230, 29%, 61%, 0.15);
 	--shadow-slider: 0 1.5rem 3rem hsl(174, 100%, 50%);
 
 	// font families
@@ -38,6 +38,8 @@
 	--clr-text: var(--clr-neutral-600);
 	--clr-heading: var(--clr-neutral-700);
 	--clr-span: var(--clr-neutral-700);
+
+	--bg-card: var(--clr-white);
 
 	--slider-bar: var(--clr-neutral-400);
 	--slider-bar-filled: var(--clr-primary-700);

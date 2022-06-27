@@ -1,0 +1,8 @@
+.card {
+	margin-inline: auto;
+	max-width: min(100%, 54rem);
+
+	background-color: var(--bg-card);
+	box-shadow: var(--shadow);
+	border-radius: var(--borr-sm);
+}
