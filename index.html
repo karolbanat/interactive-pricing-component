@@ -2,35 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/css/main.min.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./dist/css/main.min.css">
 
-  <title>Frontend Mentor | Interactive pricing component</title>
+	<title>Frontend Mentor | Interactive pricing component</title>
 </head>
 
 <body>
 
-  <!-- Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial -->
+	<main>
+		<section class="pricing" aria-labelledby="pricing-heading">
+			<header class="header">
+				<h1 id="pricing-heading" class="header__heading">Simple, traffic-based pricing</h1>
+				<p>Sign-up for our 30-day trial. No credit card required.</p>
+			</header>
+			<div class="card">
+				<form id="pricing-form" class="pricing-form">
+					<output for="pricing" class="pricing-form__output pricing-form__output--views">100K
+						Pageviews</output>
+					<input type="range" id="pricing" min="1" max="5" step="1" class="pricing-form__input">
+					<output class="pricing-form__output pricing-form__output--price">$16.00 <span>/month</span></output>
+				</form>
+				<div class="toggle">
+					<p class="toggle__label">Monthly Billing</p>
+					<button class="btn btn--toggle" aria-label="Toggle to yearly billing"></button>
+					<p class="toggle__label">Yearly Billing </p>
+				</div>
+				<div class="divider"></div>
+				<div class="card__footer">
+					<ul class="benefit-list">
+						<li class="beneft-list__item">Unlimited websites</li>
+						<li class="beneft-list__item">100% data ownership</li>
+						<li class="beneft-list__item">Email reports</li>
+					</ul>
+					<button type="submit" form="pricing-form" class="btn btn--submit">Start my trial</button>
+				</div>
+			</div>
+		</section>
+	</main>
 
 </body>
 
