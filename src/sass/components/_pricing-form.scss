@@ -26,6 +26,21 @@
 
 		border-radius: 100vmax;
 		cursor: ew-resize;
+
+		&::-webkit-slider-thumb {
+			appearance: none;
+			width: 4rem;
+			aspect-ratio: 1;
+
+			// slider thumb
+			background-color: var(--slider-circle);
+			background-image: url('../images/icon-slider.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+
+			border: none;
+			border-radius: 100vmax;
+		}
 	}
 
 	&__output {
