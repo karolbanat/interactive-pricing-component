@@ -2,9 +2,12 @@
 @import './base/reset';
 @import './base/base';
 
+@import './utility/divider';
+
 @import './components/pricing';
 @import './components/header';
 @import './components/card';
 @import './components/pricing-form';
 @import './components/toggle';
 @import './components/btn';
+@import './components/benefit-list';
