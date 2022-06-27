@@ -1,0 +1,24 @@
+.header {
+	padding-block: 4rem;
+
+	text-align: center;
+
+	background-image: url('../images/pattern-circles.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	&__heading {
+		margin-bottom: 1.2rem;
+		font-size: clamp(var(--fz-medium), 4vw, 2.8rem);
+	}
+
+	p {
+		font-size: var(--fz-regular);
+
+		@media (max-width: 50em) {
+			margin-inline: auto;
+			max-width: 22ch;
+		}
+	}
+}
