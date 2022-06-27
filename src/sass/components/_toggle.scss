@@ -1,0 +1,12 @@
+.toggle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	margin-bottom: 4rem;
+
+	&__label {
+		font-size: var(--fz-small);
+	}
+}

@@ -1,0 +1,38 @@
+.btn {
+	border: none;
+	border-radius: 100vmax;
+
+	cursor: pointer;
+
+	&--toggle {
+		--circle-width: 1.4rem;
+		--circle-left: 0.4rem;
+
+		position: relative;
+		width: 4.3rem;
+		height: 2.2rem;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+
+			width: var(--circle-width);
+			aspect-ratio: 1;
+
+			background-color: var(--toggle);
+			border-radius: 100vmax;
+
+			transition: left 0.35s ease;
+		}
+
+		&-left::before {
+			left: var(--circle-left);
+		}
+
+		&-right::before {
+			left: calc(100% - var(--circle-width) - var(--circle-left));
+		}
+	}
+}
