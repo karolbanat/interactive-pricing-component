@@ -8,5 +8,28 @@
 
 	&__label {
 		font-size: var(--fz-small);
+
+		&--discount {
+			position: relative;
+
+			&::after {
+				content: '-25%';
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+
+				padding: 0.2rem 1rem;
+				margin-left: 1.2rem;
+
+				color: var(--clr-discount);
+				background-color: var(--bg-discount);
+				border-radius: 100vmax;
+
+				@media (min-width: 50em) {
+					content: '25% discount';
+					width: max-content;
+				}
+			}
+		}
 	}
 }
