@@ -25,14 +25,17 @@
 			</header>
 			<div class="card">
 				<form id="pricing-form" class="pricing-form">
-					<output for="pricing" class="pricing-form__output pricing-form__output--views">100K
+					<output for="pricing-input" id="output-views"
+						class="pricing-form__output pricing-form__output--views">100K
 						Pageviews</output>
-					<input type="range" id="pricing" min="1" max="5" step="1">
-					<output class="pricing-form__output pricing-form__output--price">$16.00 <span>/month</span></output>
+					<input type="range" id="pricing-input" min="0" max="4" step="1" aria-label="Pricing">
+					<output for="pricing-input" class="pricing-form__output pricing-form__output--price"><span
+							id="output-price">$16.00</span>
+						/month</output>
 				</form>
 				<div class="toggle">
 					<p class="toggle__label">Monthly Billing</p>
-					<button class="btn btn--toggle btn--toggle-left" aria-label="Toggle to yearly billing"></button>
+					<button class="btn btn--toggle btn--toggle-left" aria-label="Toggle to yearly billing."></button>
 					<p class="toggle__label toggle__label--discount">Yearly Billing</p>
 				</div>
 				<div class="divider"></div>
@@ -51,6 +54,7 @@
 		</section>
 	</main>
 
+	<script src="./dist/js/script.min.js"></script>
 </body>
 
 </html>

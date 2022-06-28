@@ -25,7 +25,6 @@
 		background-repeat: no-repeat;
 
 		border-radius: 100vmax;
-		cursor: ew-resize;
 
 		&::-webkit-slider-thumb {
 			appearance: none;
@@ -40,6 +39,7 @@
 
 			border: none;
 			border-radius: 100vmax;
+			cursor: grab;
 		}
 
 		&::-moz-range-thumb {
@@ -55,26 +55,29 @@
 
 			border: none;
 			border-radius: 100vmax;
+			cursor: grab;
 		}
 	}
 
 	&__output {
-		font-weight: var(--fw-700);
-
 		&--views {
+			font-weight: var(--fw-700);
 			letter-spacing: 2px;
 			text-transform: uppercase;
 		}
 
 		&--price {
-			font-size: var(--fz-large);
-			color: var(--clr-price);
+			font-size: var(--fz-regular);
+			font-weight: var(--fw-400);
+
+			color: var(--clr-text);
 
 			span {
+				font-weight: var(--fw-700);
+				font-size: var(--fz-large);
 				vertical-align: middle;
-				font-size: var(--fz-regular);
-				font-weight: var(--fw-400);
-				color: var(--clr-text);
+
+				color: var(--clr-price);
 			}
 		}
 	}
