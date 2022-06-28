@@ -8,8 +8,8 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution Page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages Site](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/interactive-pricing-component-49fkfSMbfK)
+- Live Site URL: [GitHub Pages Site](https://karolbanat.github.io/interactive-pricing-component/)
 
 ## Author
 
