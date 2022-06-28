@@ -40,7 +40,13 @@
 
 			border: none;
 			border-radius: 100vmax;
+			transition: background-color 0.35s ease-in-out;
 			cursor: grab;
+
+			&:hover,
+			&:focus {
+				background-color: darken(hsl(174 86% 45%), 5);
+			}
 		}
 
 		&::-moz-range-thumb {
@@ -57,7 +63,13 @@
 
 			border: none;
 			border-radius: 100vmax;
+			transition: background-color 0.35s ease-in-out;
 			cursor: grab;
+
+			&:hover,
+			&:focus {
+				background-color: darken(hsl(174 86% 45%), 5);
+			}
 		}
 	}
 
